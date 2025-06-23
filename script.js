@@ -8,7 +8,6 @@ slider.addEventListener('input', () => {
     const dna = milestone.querySelector('.dna-layer');
     const star = milestone.querySelector('.star-layer');
 
-    // Fade between the two based on slider
     const dnaOpacity = Math.max(0, (value - 50) / 50);
     const starOpacity = Math.max(0, (50 - value) / 50);
 
@@ -16,3 +15,14 @@ slider.addEventListener('input', () => {
     star.style.opacity = starOpacity;
   });
 });
+
+// Scroll Reveal Logic
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.milestone').forEach(m => observer.observe(m));
