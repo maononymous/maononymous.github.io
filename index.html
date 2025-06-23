@@ -1,171 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mohammed Abdullah Omer | Portfolio</title>
-  <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Through Time</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="sliderLine"></div>
-  <input type="range" id="lensSlider" min="0" max="100" value="50"/>
+    <div class="timeline-container" id="timeline">
+        <!-- Milestone 1 -->
+        <section class="milestone" data-milestone="0">
+            <div class="milestone-content">
+                <!-- DNA Layer -->
+                <div class="layer dna-layer" data-layer="dna">
+                    <div class="dna-content">
+                        <h2>The Spark</h2>
+                        <p>It started with curiosity. Late nights, endless questions, and the burning desire to create something meaningful. The moment I realized code wasn't just syntax—it was poetry in motion.</p>
+                        <div class="emotion-tags">
+                            <span class="emotion-tag">Wonder</span>
+                            <span class="emotion-tag">Discovery</span>
+                            <span class="emotion-tag">Passion</span>
+                        </div>
+                        <div class="dna-visual">
+                            <svg class="dna-strand" viewBox="0 0 200 300">
+                                <defs>
+                                    <linearGradient id="dnaGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#ff8e8e;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M50,50 Q100,80 150,50 T50,150 T150,150 T50,250" stroke="url(#dnaGrad1)" stroke-width="3" fill="none"/>
+                                <path d="M150,50 Q100,80 50,50 T150,150 T50,150 T150,250" stroke="url(#dnaGrad1)" stroke-width="3" fill="none"/>
+                                <circle cx="50" cy="50" r="4" fill="url(#dnaGrad1)"/>
+                                <circle cx="150" cy="50" r="4" fill="url(#dnaGrad1)"/>
+                                <circle cx="100" cy="100" r="4" fill="url(#dnaGrad1)"/>
+                                <circle cx="50" cy="150" r="4" fill="url(#dnaGrad1)"/>
+                                <circle cx="150" cy="150" r="4" fill="url(#dnaGrad1)"/>
+                                <circle cx="100" cy="200" r="4" fill="url(#dnaGrad1)"/>
+                                <circle cx="50" cy="250" r="4" fill="url(#dnaGrad1)"/>
+                                <circle cx="150" cy="250" r="4" fill="url(#dnaGrad1)"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Star Layer -->
+                <div class="layer star-layer" data-layer="star">
+                    <div class="star-content">
+                        <div class="star-info">
+                            <h2>First Project</h2>
+                            <p>A simple web application that taught me the fundamentals. Every line of code was a victory, every bug a lesson learned.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Git</span>
+                            </div>
+                            <div class="project-link">
+                                <a href="#" class="project-btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="star-visual">
+                            <svg class="constellation" viewBox="0 0 300 300">
+                                <defs>
+                                    <linearGradient id="starGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#45b7b8;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="50" cy="50" r="3" fill="url(#starGrad1)"/>
+                                <circle cx="120" cy="80" r="2" fill="url(#starGrad1)"/>
+                                <circle cx="200" cy="60" r="4" fill="url(#starGrad1)"/>
+                                <circle cx="180" cy="120" r="2" fill="url(#starGrad1)"/>
+                                <circle cx="100" cy="150" r="3" fill="url(#starGrad1)"/>
+                                <circle cx="250" cy="120" r="3" fill="url(#starGrad1)"/>
+                                <circle cx="80" cy="200" r="2" fill="url(#starGrad1)"/>
+                                <circle cx="180" cy="200" r="3" fill="url(#starGrad1)"/>
+                                <circle cx="220" cy="180" r="2" fill="url(#starGrad1)"/>
+                                <line x1="50" y1="50" x2="120" y2="80" stroke="url(#starGrad1)" stroke-width="1" opacity="0.5"/>
+                                <line x1="120" y1="80" x2="200" y2="60" stroke="url(#starGrad1)" stroke-width="1" opacity="0.5"/>
+                                <line x1="200" y1="60" x2="180" y2="120" stroke="url(#starGrad1)" stroke-width="1" opacity="0.5"/>
+                                <line x1="180" y1="120" x2="100" y2="150" stroke="url(#starGrad1)" stroke-width="1" opacity="0.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <div id="timeline">
-    <!-- TIMELINE ITEMS -->
-    <!-- Each item contains an anchor, and both DNA and Star Map layers -->
+        <!-- Milestone 2 -->
+        <section class="milestone" data-milestone="1">
+            <div class="milestone-content">
+                <!-- DNA Layer -->
+                <div class="layer dna-layer" data-layer="dna">
+                    <div class="dna-content">
+                        <h2>The Challenge</h2>
+                        <p>Fear and excitement dancing together. The first real project with real stakes. Sleepless nights fueled by determination and the occasional energy drink. This was where I learned that growth happens outside the comfort zone.</p>
+                        <div class="emotion-tags">
+                            <span class="emotion-tag">Determination</span>
+                            <span class="emotion-tag">Growth</span>
+                            <span class="emotion-tag">Resilience</span>
+                        </div>
+                        <div class="dna-visual">
+                            <svg class="dna-strand" viewBox="0 0 200 300">
+                                <defs>
+                                    <linearGradient id="dnaGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#ff8e8e;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M50,50 Q100,80 150,50 T50,150 T150,150 T50,250" stroke="url(#dnaGrad2)" stroke-width="4" fill="none"/>
+                                <path d="M150,50 Q100,80 50,50 T150,150 T50,150 T150,250" stroke="url(#dnaGrad2)" stroke-width="4" fill="none"/>
+                                <circle cx="75" cy="75" r="5" fill="url(#dnaGrad2)"/>
+                                <circle cx="125" cy="75" r="5" fill="url(#dnaGrad2)"/>
+                                <circle cx="100" cy="125" r="5" fill="url(#dnaGrad2)"/>
+                                <circle cx="75" cy="175" r="5" fill="url(#dnaGrad2)"/>
+                                <circle cx="125" cy="175" r="5" fill="url(#dnaGrad2)"/>
+                                <circle cx="100" cy="225" r="5" fill="url(#dnaGrad2)"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Star Layer -->
+                <div class="layer star-layer" data-layer="star">
+                    <div class="star-content">
+                        <div class="star-info">
+                            <h2>Full-Stack App</h2>
+                            <p>An e-commerce platform with user authentication, payment processing, and real-time inventory management. The complexity taught me system design and scalability.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe API</span>
+                                <span class="tech-tag">AWS</span>
+                            </div>
+                            <div class="project-link">
+                                <a href="#" class="project-btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="star-visual">
+                            <svg class="constellation" viewBox="0 0 300 300">
+                                <defs>
+                                    <linearGradient id="starGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#45b7b8;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="150" cy="50" r="4" fill="url(#starGrad2)"/>
+                                <circle cx="100" cy="100" r="3" fill="url(#starGrad2)"/>
+                                <circle cx="200" cy="100" r="3" fill="url(#starGrad2)"/>
+                                <circle cx="75" cy="150" r="2" fill="url(#starGrad2)"/>
+                                <circle cx="150" cy="150" r="5" fill="url(#starGrad2)"/>
+                                <circle cx="225" cy="150" r="2" fill="url(#starGrad2)"/>
+                                <circle cx="100" cy="200" r="3" fill="url(#starGrad2)"/>
+                                <circle cx="200" cy="200" r="3" fill="url(#starGrad2)"/>
+                                <circle cx="150" cy="250" r="4" fill="url(#starGrad2)"/>
+                                <line x1="150" y1="50" x2="100" y2="100" stroke="url(#starGrad2)" stroke-width="1.5" opacity="0.6"/>
+                                <line x1="150" y1="50" x2="200" y2="100" stroke="url(#starGrad2)" stroke-width="1.5" opacity="0.6"/>
+                                <line x1="100" y1="100" x2="75" y2="150" stroke="url(#starGrad2)" stroke-width="1.5" opacity="0.6"/>
+                                <line x1="200" y1="100" x2="225" y2="150" stroke="url(#starGrad2)" stroke-width="1.5" opacity="0.6"/>
+                                <line x1="75" y1="150" x2="100" y2="200" stroke="url(#starGrad2)" stroke-width="1.5" opacity="0.6"/>
+                                <line x1="225" y1="150" x2="200" y2="200" stroke="url(#starGrad2)" stroke-width="1.5" opacity="0.6"/>
+                                <line x1="100" y1="200" x2="150" y2="250" stroke="url(#starGrad2)" stroke-width="1.5" opacity="0.6"/>
+                                <line x1="200" y1="200" x2="150" y2="250" stroke="url(#starGrad2)" stroke-width="1.5" opacity="0.6"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Repeat structure -->
-    <section class="milestone">
-      <div class="anchor">2018 — Chose Computer Science</div>
-      <div class="content-layer">
-      <div class="dna-layer">
-        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
-        <p>I didn’t pick CS just to code. I picked it because it felt like the closest thing to talking with logic itself. I wanted to understand the invisible — to build things with structure, elegance, and intent.</p>
-      </div>
-      <div class="star-layer">
-        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
-        <p>Started B.E. in Computer Science Engineering at Matrusri Engineering College, Hyderabad. Graduated in 2022. GATE Exam 2023 AIR 200.</p>
-      </div>
-      </div>
-    </section>
+        <!-- Milestone 3 -->
+        <section class="milestone" data-milestone="2">
+            <div class="milestone-content">
+                <!-- DNA Layer -->
+                <div class="layer dna-layer" data-layer="dna">
+                    <div class="dna-content">
+                        <h2>The Breakthrough</h2>
+                        <p>The moment everything clicked. When code became second nature and problems transformed into puzzles waiting to be solved. This wasn't just about technology anymore—it was about creating experiences that matter.</p>
+                        <div class="emotion-tags">
+                            <span class="emotion-tag">Mastery</span>
+                            <span class="emotion-tag">Innovation</span>
+                            <span class="emotion-tag">Impact</span>
+                        </div>
+                        <div class="dna-visual">
+                            <svg class="dna-strand" viewBox="0 0 200 300">
+                                <defs>
+                                    <linearGradient id="dnaGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#ff8e8e;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <path d="M50,30 Q100,60 150,30 Q100,80 50,100 Q100,130 150,100 Q100,160 50,180 Q100,210 150,180 Q100,240 50,270" stroke="url(#dnaGrad3)" stroke-width="4" fill="none"/>
+                                <path d="M150,30 Q100,60 50,30 Q100,80 150,100 Q100,130 50,100 Q100,160 150,180 Q100,210 50,180 Q100,240 150,270" stroke="url(#dnaGrad3)" stroke-width="4" fill="none"/>
+                                <circle cx="100" cy="50" r="6" fill="url(#dnaGrad3)"/>
+                                <circle cx="100" cy="100" r="6" fill="url(#dnaGrad3)"/>
+                                <circle cx="100" cy="150" r="6" fill="url(#dnaGrad3)"/>
+                                <circle cx="100" cy="200" r="6" fill="url(#dnaGrad3)"/>
+                                <circle cx="100" cy="250" r="6" fill="url(#dnaGrad3)"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Star Layer -->
+                <div class="layer star-layer" data-layer="star">
+                    <div class="star-content">
+                        <div class="star-info">
+                            <h2>AI Integration</h2>
+                            <p>A machine learning platform that processes natural language and provides intelligent insights. Featured advanced algorithms and real-time data visualization.</p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">GraphQL</span>
+                            </div>
+                            <div class="project-link">
+                                <a href="#" class="project-btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="star-visual">
+                            <svg class="constellation" viewBox="0 0 300 300">
+                                <defs>
+                                    <radialGradient id="starCenter3" cx="50%" cy="50%" r="50%">
+                                        <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#45b7b8;stop-opacity:0.3" />
+                                    </radialGradient>
+                                    <linearGradient id="starGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#45b7b8;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="150" cy="150" r="8" fill="url(#starCenter3)"/>
+                                <circle cx="100" cy="100" r="3" fill="url(#starGrad3)"/>
+                                <circle cx="200" cy="100" r="3" fill="url(#starGrad3)"/>
+                                <circle cx="100" cy="200" r="3" fill="url(#starGrad3)"/>
+                                <circle cx="200" cy="200" r="3" fill="url(#starGrad3)"/>
+                                <circle cx="150" cy="80" r="2" fill="url(#starGrad3)"/>
+                                <circle cx="150" cy="220" r="2" fill="url(#starGrad3)"/>
+                                <circle cx="80" cy="150" r="2" fill="url(#starGrad3)"/>
+                                <circle cx="220" cy="150" r="2" fill="url(#starGrad3)"/>
+                                <circle cx="120" cy="120" r="2" fill="url(#starGrad3)"/>
+                                <circle cx="180" cy="120" r="2" fill="url(#starGrad3)"/>
+                                <circle cx="120" cy="180" r="2" fill="url(#starGrad3)"/>
+                                <circle cx="180" cy="180" r="2" fill="url(#starGrad3)"/>
+                                <line x1="150" y1="150" x2="100" y2="100" stroke="url(#starGrad3)" stroke-width="1" opacity="0.6"/>
+                                <line x1="150" y1="150" x2="200" y2="100" stroke="url(#starGrad3)" stroke-width="1" opacity="0.6"/>
+                                <line x1="150" y1="150" x2="100" y2="200" stroke="url(#starGrad3)" stroke-width="1" opacity="0.6"/>
+                                <line x1="150" y1="150" x2="200" y2="200" stroke="url(#starGrad3)" stroke-width="1" opacity="0.6"/>
+                                <line x1="150" y1="150" x2="150" y2="80" stroke="url(#starGrad3)" stroke-width="1" opacity="0.6"/>
+                                <line x1="150" y1="150" x2="150" y2="220" stroke="url(#starGrad3)" stroke-width="1" opacity="0.6"/>
+                                <line x1="150" y1="150" x2="80" y2="150" stroke="url(#starGrad3)" stroke-width="1" opacity="0.6"/>
+                                <line x1="150" y1="150" x2="220" y2="150" stroke="url(#starGrad3)" stroke-width="1" opacity="0.6"/>
+                                <line x1="150" y1="150" x2="120" y2="120" stroke="url(#starGrad3)" stroke-width="1" opacity="0.4"/>
+                                <line x1="150" y1="150" x2="180" y2="120" stroke="url(#starGrad3)" stroke-width="1" opacity="0.4"/>
+                                <line x1="150" y1="150" x2="120" y2="180" stroke="url(#starGrad3)" stroke-width="1" opacity="0.4"/>
+                                <line x1="150" y1="150" x2="180" y2="180" stroke="url(#starGrad3)" stroke-width="1" opacity="0.4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="milestone">
-      <div class="anchor">2020 — Built Speed Limit Assistant</div>
-      <div class="content-layer">
-      <div class="dna-layer">
-        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
-        <p>This was about keeping people safe. My first project that felt like it cared. A silent co-pilot, a way to alert drivers without judgment. I remember the joy of making GPS work live — it felt like giving a machine awareness.</p>
-      </div>
-      <div class="star-layer">
-        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
-        <p>Used HereMap API to develop a GPS-based real-time speed tracker. Displayed alerts based on user location and local speed zones. Mobile-first implementation using JavaScript and map overlays.</p>
-      </div>
-      </div>
-    </section>
+        <!-- Add more milestones here as needed -->
+    </div>
 
-    <section class="milestone">
-      <div class="anchor">2021 — SfUIT: Smart fabricia Using Internet of Things</div>
-      <div class="content-layer">
-      <div class="dna-layer">
-        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
-        <p>Our first baby. We were proud of this. We lost sleep over this. Hit walls, broke them. It was the first time I felt like we were making something that breathed — something that could actually touch lives. And it touched ours first.</p>
-      </div>
-      <div class="star-layer">
-        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
-        <p>Wearable IoT device for real-time health monitoring. Displayed vitals on a dashboard. Runner-up at Assistive Technology Hackathon 2.0. Built using sensors, data pipelines, and custom UI for vitals tracking.</p>
-      </div>
-      </div>
-    </section>
+    <!-- Vertical Divider Line (The main slider) -->
+    <div class="divider-container" id="dividerContainer">
+        <div class="divider-line" id="dividerLine">
+            <div class="divider-handle" id="dividerHandle">
+                <div class="handle-icon">
+                    <span class="handle-dots"></span>
+                    <span class="handle-dots"></span>
+                    <span class="handle-dots"></span>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <section class="milestone">
-      <div class="anchor">2022 — Secured Internship + Final Year Encryption Project</div>
-      <div class="content-layer">
-      <div class="dna-layer">
-        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
-        <p>This was when I began shaping my professional self. The internship made me feel seen as a contributor. And working on medical data security? It taught me the importance of protecting what matters most: people’s trust.</p>
-      </div>
-      <div class="star-layer">
-        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
-        <p>Backend Intern @ Player Orbit. Built auth microservices with REST APIs and OAuth 2.0.
-           Final year project: “Anonymous Data Sharing Scheme” using Bilinear Diffie-Hellman encryption to secure sensitive medical data transmission.</p>
-      </div>
-      </div>
-    </section>
+    <!-- View Labels -->
+    <div class="view-labels">
+        <div class="view-label dna-label" id="dnaLabel">
+            <span class="label-icon">🧬</span>
+            <span class="label-text">DNA View</span>
+        </div>
+        <div class="view-label star-label" id="starLabel">
+            <span class="label-icon">🌌</span>
+            <span class="label-text">Star Map</span>
+        </div>
+    </div>
 
-    <section class="milestone">
-      <div class="anchor">2022–2023 — Abdul Bari Pvt. Ltd.</div>
-      <div class="content-layer">
-      <div class="dna-layer">
-        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
-        <p>Mentoring nearly 400,000 students changed how I viewed knowledge. To teach is to understand twice. Every doubt they had made me understand deeper. And helping build a platform that served others? That felt right.</p>
-      </div>
-      <div class="star-layer">
-        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
-        <p>Software Developer: Developed LMS platform for 1,000+ users using HTML/CSS/JS. Integrated Stripe payment gateway.
-           Course Assistant: Co-instructed DSA, Java, and C++ courses to 380k+ students via Udemy and other platforms.</p>
-      </div>
-      </div>
-    </section>
+    <!-- Milestone Navigation -->
+    <div class="milestone-nav" id="milestoneNav">
+        <div class="nav-dot active" data-milestone="0"></div>
+        <div class="nav-dot" data-milestone="1"></div>
+        <div class="nav-dot" data-milestone="2"></div>
+    </div>
 
-    <section class="milestone">
-      <div class="anchor">2024 — Started MS in CS at DePaul</div>
-      <div class="content-layer">
-      <div class="dna-layer">
-        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
-        <p>Moving to a new country, starting over — it wasn’t just academic. It was personal. I was proving to myself that I could rebuild with clarity, focus, and curiosity. Every class felt like a mirror reflecting a better version of me.</p>
-      </div>
-      <div class="star-layer">
-        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
-        <p>Began M.S. in Computer Science @ DePaul University, Chicago. CGPA: 3.85.
-           Projects:
+    <!-- Instructions (can be removed after understanding the interface) -->
+    <div class="instructions" id="instructions">
+        <div class="instruction-text">
+            <span>Drag the vertical line to reveal different perspectives</span>
+            <button class="close-instructions" id="closeInstructions">×</button>
+        </div>
+    </div>
 
-             Car Rental System (Java, OOP, MySQL)
-             Poor-Man’s-Google (Multithreaded search engine, sockets)
-             Poor-Man’s-Reddit (React.js + JS task manager)</p>
-      </div>
-      </div>
-    </section>
-
-    <section class="milestone">
-      <div class="anchor">2024 — Department Assistant @ SCPS, DePaul</div>
-      <div class="content-layer">
-      <div class="dna-layer">
-        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
-        <p>This was my first role on campus — a grounding experience. It wasn’t flashy, but it taught me the value of being present, consistent, and quietly dependable. I saw how systems run behind the scenes, and how every small task can make someone else's day easier.</p>
-      </div>
-      <div class="star-layer">
-        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
-        <p>Department Assistant, SCPS, DePaul University (May 2024 – April 2025).
-           Handled administrative duties, Excel/database management, manual course transfers and drops, and resolved student queries via phone and email.</p>
-      </div>
-      </div>
-    </section>
-
-    <section class="milestone">
-      <div class="anchor">2025 — Built TaxMate</div>
-      <div class="content-layer">
-      <div class="dna-layer">
-        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
-        <p>Every tax season felt like a scam — international students like us were paying filing companies half of what we’d get back. So we built our own. It was about community, trust, and self-reliance. I’m still proud of it.</p>
-      </div>
-      <div class="star-layer">
-        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
-        <p>SwiftUI + REST: Web app and iOS app for international students to upload W2s, extract data via OCR, and auto-generate Forms 8843/1040NR. Secure doc handling, multi-step user flow, free to use.</p>
-      </div>
-      </div>
-    </section>
-
-    <section class="milestone">
-      <div class="anchor">2025 — Program Assistant @ SCPS, DePaul</div>
-      <div class="content-layer">
-      <div class="dna-layer">
-        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
-        <p>This role felt like a step up — not just in title, but in how I saw myself. I wasn’t just assisting anymore — I was owning responsibilities, making decisions, improving systems. It taught me how to support a program while also becoming more intentional with how I design my own.</p>
-      </div>
-      <div class="star-layer">
-        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
-        <p>Program Assistant, SCPS, DePaul University (May 2025 – Present).
-           Supports academic program logistics, streamlines internal workflows, assists in data operations, and acts as a key point of coordination between students, faculty, and administration.</p>
-      </div>
-      </div>
-    </section>
-    
-    <section class="milestone">
-      <div class="anchor">2025 — Built Jeevit</div>
-      <div class="content-layer">
-      <div class="dna-layer">
-        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
-        <p>Inspired by MyFitnessPal and my own wellness journey, Jeevit wasn’t just a fitness tracker — it was a reflection of my need for balance, discipline, and mental clarity. I didn’t just build it. I needed it.</p>
-      </div>
-      <div class="star-layer">
-        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
-        <p>Built in SwiftUI with HealthKit + CloudKit. Features: manual and synced logging for water, food, weight, steps, and exercise. Local + iCloud persistence. Apple Sign-in. Full native graph rendering and custom dashboards.</p>
-      </div>
-      </div>
-    </section>
-
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
