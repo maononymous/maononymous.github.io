@@ -309,5 +309,98 @@
     </div>
 
     <script src="script.js"></script>
+    
+    <!-- Temporary script for testing - remove when you have script.js -->
+    <script>
+        // Quick test script - replace with proper script.js
+        let isDragging = false;
+        let dividerPosition = 50; // percentage from left
+        
+        const dividerHandle = document.getElementById('dividerHandle');
+        const dividerLine = document.getElementById('dividerLine');
+        const dividerContainer = document.getElementById('dividerContainer');
+        
+        // Add basic styles for the divider
+        dividerContainer.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 50%;
+            width: 4px;
+            height: 100vh;
+            z-index: 1000;
+            transform: translateX(-50%);
+            background: rgba(255,255,255,0.2);
+            cursor: ew-resize;
+        `;
+        
+        dividerHandle.style.cssText = `
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            width: 24px;
+            height: 60px;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            border-radius: 12px;
+            transform: translateY(-50%);
+            cursor: grab;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        `;
+        
+        function updateDividerPosition(clientX) {
+            const rect = document.body.getBoundingClientRect();
+            const newPosition = ((clientX - rect.left) / rect.width) * 100;
+            dividerPosition = Math.max(10, Math.min(90, newPosition));
+            
+            dividerContainer.style.left = dividerPosition + '%';
+            
+            // Update layers visibility based on position
+            const showDNA = dividerPosition < 50;
+            document.querySelectorAll('[data-layer="dna"]').forEach(layer => {
+                layer.style.opacity = showDNA ? '1' : '0';
+            });
+            document.querySelectorAll('[data-layer="star"]').forEach(layer => {
+                layer.style.opacity = showDNA ? '0' : '1';
+            });
+        }
+        
+        // Mouse events
+        dividerHandle.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            dividerHandle.style.cursor = 'grabbing';
+            e.preventDefault();
+        });
+        
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                updateDividerPosition(e.clientX);
+            }
+        });
+        
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+            dividerHandle.style.cursor = 'grab';
+        });
+        
+        // Touch events
+        dividerHandle.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            e.preventDefault();
+        });
+        
+        document.addEventListener('touchmove', (e) => {
+            if (isDragging) {
+                updateDividerPosition(e.touches[0].clientX);
+            }
+        });
+        
+        document.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+        
+        // Initial setup
+        updateDividerPosition(window.innerWidth / 2);
+    </script></script>
 </body>
 </html>
