@@ -2,26 +2,149 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdullah Omer Mohammed | Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohammed Abdullah Omer | Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <div id="slider-container">
-    <input type="range" id="lensSlider" min="0" max="100" value="50" />
-    <div id="timeline">
-      <section class="milestone" data-year="2021">
-        <div class="anchor">2021 — Built SfUIT</div>
-        <div class="dna-layer">
-          <p>Late nights. First love for code. The joy of making something real.</p>
-        </div>
-        <div class="star-layer">
-          <p>Used SwiftUI + Firebase. 300+ downloads. Learned full-stack iOS dev.</p>
-        </div>
-      </section>
-      <!-- Repeat for other milestones -->
-    </div>
+  <input type="range" id="lensSlider" min="0" max="100" value="50"/>
+
+  <div id="timeline">
+    <!-- TIMELINE ITEMS -->
+    <!-- Each item contains an anchor, and both DNA and Star Map layers -->
+
+    <!-- Repeat structure -->
+    <section class="milestone">
+      <div class="anchor">2018 — Chose Computer Science</div>
+      <div class="dna-layer">
+        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
+        <p>I didn’t pick CS just to code. I picked it because it felt like the closest thing to talking with logic itself. I wanted to understand the invisible — to build things with structure, elegance, and intent.</p>
+      </div>
+      <div class="star-layer">
+        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
+        <p>Started B.E. in Computer Science Engineering at Matrusri Engineering College, Hyderabad. Graduated in 2022. GATE Exam 2023 AIR 200.</p>
+      </div>
+    </section>
+
+    <section class="milestone">
+      <div class="anchor">2020 — Built Speed Limit Assistant</div>
+      <div class="dna-layer">
+        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
+        <p>This was about keeping people safe. My first project that felt like it cared. A silent co-pilot, a way to alert drivers without judgment. I remember the joy of making GPS work live — it felt like giving a machine awareness.</p>
+      </div>
+      <div class="star-layer">
+        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
+        <p>Used HereMap API to develop a GPS-based real-time speed tracker. Displayed alerts based on user location and local speed zones. Mobile-first implementation using JavaScript and map overlays.</p>
+      </div>
+    </section>
+
+    <section class="milestone">
+      <div class="anchor">2021 — SfUIT: Smart fabricia Using Internet of Things</div>
+      <div class="dna-layer">
+        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
+        <p>Our first baby. We were proud of this. We lost sleep over this. Hit walls, broke them. It was the first time I felt like we were making something that breathed — something that could actually touch lives. And it touched ours first.</p>
+      </div>
+      <div class="star-layer">
+        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
+        <p>Wearable IoT device for real-time health monitoring. Displayed vitals on a dashboard. Runner-up at Assistive Technology Hackathon 2.0. Built using sensors, data pipelines, and custom UI for vitals tracking.</p>
+      </div>
+    </section>
+
+    <section class="milestone">
+      <div class="anchor">2022 — Secured Internship + Final Year Encryption Project</div>
+      <div class="dna-layer">
+        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
+        <p>This was when I began shaping my professional self. The internship made me feel seen as a contributor. And working on medical data security? It taught me the importance of protecting what matters most: people’s trust.</p>
+      </div>
+      <div class="star-layer">
+        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
+        <p>Backend Intern @ Player Orbit. Built auth microservices with REST APIs and OAuth 2.0.
+           Final year project: “Anonymous Data Sharing Scheme” using Bilinear Diffie-Hellman encryption to secure sensitive medical data transmission.</p>
+      </div>
+    </section>
+
+    <section class="milestone">
+      <div class="anchor">2022–2023 — Abdul Bari Pvt. Ltd.</div>
+      <div class="dna-layer">
+        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
+        <p>Mentoring nearly 400,000 students changed how I viewed knowledge. To teach is to understand twice. Every doubt they had made me understand deeper. And helping build a platform that served others? That felt right.</p>
+      </div>
+      <div class="star-layer">
+        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
+        <p>Software Developer: Developed LMS platform for 1,000+ users using HTML/CSS/JS. Integrated Stripe payment gateway.
+           Course Assistant: Co-instructed DSA, Java, and C++ courses to 380k+ students via Udemy and other platforms.</p>
+      </div>
+    </section>
+
+    <section class="milestone">
+      <div class="anchor">2024 — Started MS in CS at DePaul</div>
+      <div class="dna-layer">
+        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
+        <p>Moving to a new country, starting over — it wasn’t just academic. It was personal. I was proving to myself that I could rebuild with clarity, focus, and curiosity. Every class felt like a mirror reflecting a better version of me.</p>
+      </div>
+      <div class="star-layer">
+        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
+        <p>Began M.S. in Computer Science @ DePaul University, Chicago. CGPA: 3.85.
+           Projects:
+
+             Car Rental System (Java, OOP, MySQL)
+             Poor-Man’s-Google (Multithreaded search engine, sockets)
+             Poor-Man’s-Reddit (React.js + JS task manager)</p>
+      </div>
+    </section>
+
+    <section class="milestone">
+      <div class="anchor">2024 — Department Assistant @ SCPS, DePaul</div>
+      <div class="dna-layer">
+        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
+        <p>This was my first role on campus — a grounding experience. It wasn’t flashy, but it taught me the value of being present, consistent, and quietly dependable. I saw how systems run behind the scenes, and how every small task can make someone else's day easier.</p>
+      </div>
+      <div class="star-layer">
+        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
+        <p>Department Assistant, SCPS, DePaul University (May 2024 – April 2025).
+           Handled administrative duties, Excel/database management, manual course transfers and drops, and resolved student queries via phone and email.</p>
+      </div>
+    </section>
+
+    <section class="milestone">
+      <div class="anchor">2025 — Built TaxMate</div>
+      <div class="dna-layer">
+        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
+        <p>Every tax season felt like a scam — international students like us were paying filing companies half of what we’d get back. So we built our own. It was about community, trust, and self-reliance. I’m still proud of it.</p>
+      </div>
+      <div class="star-layer">
+        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
+        <p>SwiftUI + REST: Web app and iOS app for international students to upload W2s, extract data via OCR, and auto-generate Forms 8843/1040NR. Secure doc handling, multi-step user flow, free to use.</p>
+      </div>
+    </section>
+
+    <section class="milestone">
+      <div class="anchor">2025 — Program Assistant @ SCPS, DePaul</div>
+      <div class="dna-layer">
+        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
+        <p>This role felt like a step up — not just in title, but in how I saw myself. I wasn’t just assisting anymore — I was owning responsibilities, making decisions, improving systems. It taught me how to support a program while also becoming more intentional with how I design my own.</p>
+      </div>
+      <div class="star-layer">
+        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
+        <p>Program Assistant, SCPS, DePaul University (May 2025 – Present).
+           Supports academic program logistics, streamlines internal workflows, assists in data operations, and acts as a key point of coordination between students, faculty, and administration.</p>
+      </div>
+    </section>
+    
+    <section class="milestone">
+      <div class="anchor">2025 — Built Jeevit</div>
+      <div class="dna-layer">
+        <svg class="dna-svg" viewBox="0 0 100 200"><path d="M50,0 C20,50 80,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/><path d="M50,0 C80,50 20,150 50,200" stroke="#f0f" stroke-width="2" fill="none"/></svg>
+        <p>Inspired by MyFitnessPal and my own wellness journey, Jeevit wasn’t just a fitness tracker — it was a reflection of my need for balance, discipline, and mental clarity. I didn’t just build it. I needed it.</p>
+      </div>
+      <div class="star-layer">
+        <svg class="stars-svg" viewBox="0 0 200 200"><circle cx="30" cy="30" r="2" fill="#0ff"/><circle cx="80" cy="60" r="3" fill="#0ff"/><circle cx="150" cy="120" r="1.5" fill="#0ff"/><line x1="30" y1="30" x2="80" y2="60" stroke="#0ff" stroke-width="0.5"/><line x1="80" y1="60" x2="150" y2="120" stroke="#0ff" stroke-width="0.5"/></svg>
+        <p>Built in SwiftUI with HealthKit + CloudKit. Features: manual and synced logging for water, food, weight, steps, and exercise. Local + iCloud persistence. Apple Sign-in. Full native graph rendering and custom dashboards.</p>
+      </div>
+    </section>
+
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
