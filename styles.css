@@ -1,128 +1,53 @@
-/* Reset + Base Theme */
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  font-family: 'Inter', 'Helvetica Neue', sans-serif;
-  background-color: #0f1116;
-  color: #e4e4e4;
-  line-height: 1.6;
+  background: #0d0d0d;
+  color: white;
+  font-family: 'Inter', sans-serif;
   overflow-x: hidden;
 }
 
-a {
-  color: #9ecfff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-header, footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: #101218;
-  border-bottom: 1px solid #222;
-}
-
-footer {
-  border-top: 1px solid #222;
-}
-
-/* Main Container */
-.dual-track-container {
+#slider-container {
   position: relative;
-  display: flex;
-  height: calc(100vh - 160px); /* 100% minus header + footer */
+  width: 100vw;
+  height: 100%;
   overflow: hidden;
 }
 
-/* Tracks */
-.track {
-  position: absolute;
+#lensSlider {
+  position: fixed;
   top: 0;
-  height: 100%;
-  padding: 2rem;
-  overflow-y: auto;
-  transition: width 0.3s ease;
-}
-
-.left-track {
   left: 0;
-  width: 50%;
-  background: linear-gradient(to bottom, #1e1e2f, #15151f);
-  z-index: 1;
+  writing-mode: bt-lr;
+  appearance: none;
+  height: 100vh;
+  width: 100vw;
+  background: transparent;
+  z-index: 10;
 }
 
-.right-track {
-  right: 0;
-  width: 50%;
-  background: linear-gradient(to bottom, #12141a, #0f1116);
-  z-index: 1;
-  text-align: right;
+.milestone {
+  position: relative;
+  padding: 100px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-/* Slider Handle */
-.slider-handle {
+.anchor {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.dna-layer,
+.star-layer {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 6px;
-  height: 100%;
-  background-color: #ffffff22;
-  backdrop-filter: blur(3px);
-  border-left: 1px solid #555;
-  border-right: 1px solid #555;
-  z-index: 2;
-  cursor: ew-resize;
+  width: 100%;
+  transition: opacity 0.5s ease;
 }
 
-/* Sections */
-.intro, .milestone {
-  margin-bottom: 3rem;
+.dna-layer {
+  opacity: 0;
 }
 
-.milestone h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #d4d4d4;
-}
-
-.milestone p {
-  font-size: 1rem;
-  color: #a0a0a0;
-  max-width: 600px;
-}
-
-.left-track .milestone p {
-  text-align: left;
-}
-
-.right-track .milestone p {
-  text-align: right;
-  margin-left: auto;
-}
-
-/* Responsive Layout */
-@media screen and (max-width: 768px) {
-  .dual-track-container {
-    flex-direction: column;
-  }
-
-  .track,
-  .left-track,
-  .right-track {
-    width: 100% !important;
-    position: relative;
-    text-align: left !important;
-  }
-
-  .slider-handle {
-    display: none;
-  }
+.star-layer {
+  opacity: 1;
 }
