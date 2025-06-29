@@ -275,27 +275,94 @@
         <section id="pmgoogle">
             <h2>Poor Man's Google</h2>
             <h3>File Search Engine using Multithreading and Client-Server Communication | September 2024 - November 2024</h3>
-            <p>Blah Blah Blah</p>
+            <!-- Casual Paragraph -->
+            <p>
+            This was my attempt at building Google — on a budget. As part of a solo project, I created a file search engine that let a client input a keyword, and then returned the top 10 files containing that keyword the most. 
+                I set it up on a Linux VM, working with massive CSV files and building out the client-server system from scratch. It was one of those projects that pulled everything together: problem solving, systems thinking, 
+                and lots of "why isn’t this working?" moments.
+            </p>
+            <!-- Technical Paragraph -->
+            <p>
+            Built entirely in <a href="#!" class="skill" data-skill="Java">Java</a>, Poor Man’s Google was a multithreaded file search engine deployed on a Linux virtual machine. 
+                The system used a <strong>client-server architecture</strong>, where multiple clients sent keyword queries to a server via socket-based communication. 
+                On the server side, I used multithreading to parallelize search operations across large CSV files, tracking keyword frequency and returning the top 10 matching files ranked by occurrence. 
+                This project deepened my understanding of I/O optimization, thread safety, and basic information retrieval, all while reinforcing my grasp on distributed design under memory and time constraints.
+            </p>
         </section>
         <section id="pmreddit">
             <h2>Task Management System</h2>
             <h3>Task Management Website using HTML, CSS, Javascript and React.js | September 2024 - November 2024</h3>
-            <p>Blah Blah Blah</p>
+            <!-- Casual Paragraph -->
+            <p>
+            This was a solo build for my Web Applications course, a fully functional task management web app that let users create, group, and manage their tasks with custom tags and deadlines. 
+                I focused on making the UI feel lightweight and intuitive, letting users organize their day without overthinking the tool itself. 
+                It didn’t use any backend, just local storage, but it handled everything I needed, and gave me a solid feel for how modern web apps are structured.
+            </p>
+            <!-- Technical Paragraph -->
+            <p>
+            Built using <a href="#!" class="skill" data-skill="React.js">React.js</a>, <a href="#!" class="skill" data-skill="HTML">HTML</a>, <a href="#!" class="skill" data-skill="CSS">CSS</a>, 
+                and <a href="#!" class="skill" data-skill="JavaScript">JavaScript</a>, this task management system allowed users to create and edit tasks with metadata such as title, description, tags, group assignments, and deadlines. 
+                Groups could also be created, edited, and assigned tasks for better organization. All data was saved locally in the browser using `localStorage`, and the application followed a component-based architecture for state and 
+                view management. This project solidified my understanding of client-side data persistence, component hierarchies, and dynamic UI rendering in a React environment.
+            </p>
         </section>
         <section id="iwashere">
             <h2>IWasHere</h2>
             <h3>Theme based Camera Mobile App | January 2025 - March 2025</h3>
-            <p>Blah Blah Blah</p>
+            <!-- Casual Paragraph -->
+            <p>
+            IWasHere was a passion project — something I built out of curiosity, just to see if I could blend photography and mobile UI into one creative tool. 
+                The app lets users choose a themed overlay (currently country-based), take a picture, and then decide whether to keep or discard it. 
+                If saved, a share sheet opens so they can instantly send it to friends or save it to their gallery. 
+                It’s simple on the surface, but getting there taught me a lot about how camera systems and UI layers work together, especially when dealing with custom overlay frames.
+            </p>
+            <!-- Technical Paragraph -->
+            <p>
+            IWasHere is a camera-based mobile app developed using a combination of <a href="#!" class="skill" data-skill="SwiftUI">SwiftUI</a> and <a href="#!" class="skill" data-skill="UIKit">UIKit</a>. 
+                The app allows users to select a country-themed photo frame, capture a live image through the camera interface, and preview it with the overlay applied. 
+                Upon confirmation, the app opens a native <a href="#!" class="skill" data-skill="UIActivityViewController">share sheet</a> for saving or sharing the final image. 
+                Implementing the frame overlay logic required custom layering and transformation techniques to ensure alignment and pixel fidelity. 
+                While the current version supports country-based overlays, future updates aim to include event-specific themes as well.
+            </p>
         </section>
         <section id="jeevit">
             <h2>JeevIT</h2>
             <h3>Wellness Tracking Mobile App | January 2025 - March 2025</h3>
-            <p>Blah Blah Blah</p>
+            <!-- Casual Paragraph -->
+            <p>
+            JeevIT started as a way to track my own health more intentionally and quickly grew into a full-fledged wellness app. 
+                I built it to track everything from meals and water to exercise and steps, pulling real data from my Apple Watch and Health app. 
+                It became a daily companion, not just an app. The graphs, color themes, and progress rings gave it personality, while building it taught me how to take a personal problem and solve it through design, logic, and iteration.
+            </p>
+            <!-- Technical Paragraph -->
+            <p>
+            JeevIT is a privacy-first wellness tracker built using <a href="#!" class="skill" data-skill="SwiftUI">SwiftUI</a>, with deep integrations into <a href="#!" class="skill" data-skill="HealthKit">HealthKit</a>, 
+                <a href="#!" class="skill" data-skill="Core Data">Core Data</a>, and <a href="#!" class="skill" data-skill="CloudKit">CloudKit</a>. 
+                The app includes features for logging and visualizing water intake, exercise calories, meal calories, steps, and weight, using interactive charts and segmented views. 
+                Users can add custom entries, scan food barcodes via the <a href="#!" class="skill" data-skill="OpenFoodFacts API">OpenFoodFacts API</a>, and track progress with animated rings and customizable color themes. 
+                The app supports Apple Sign-In, biometric login via FaceID, and offers persistent data syncing across devices. 
+                JeevIT was designed with extensibility in mind — blending a clean UI with secure, modular storage and real-world health applications.
+            </p>
         </section>
         <section id="taxmate">
             <h2>TaxMate</h2>
             <h3>Tax Filing cross-platform App for International Students in USA | January 2025 - March 2025</h3>
-            <p>Blah Blah Blah</p>
+            <!-- Casual Paragraph -->
+            <p>
+            As an international student, filing taxes in the U.S. felt like an unsolved puzzle, so we decided to build the missing piece. 
+                TaxMate started as an academic project and evolved into a full-featured cross-platform app that helps F-1 visa students file their taxes with confidence. 
+                From uploading W-2 forms and collecting immigration details to generating filled-out IRS forms, the app guides users step-by-step through an otherwise confusing process. 
+                It’s one of the most structured and purpose-driven things I’ve built: equal parts research, tech, and empathy.
+            </p>
+            <!-- Technical Paragraph -->
+            <p>
+            TaxMate is a cross-platform tax filing platform for F-1 visa international students, developed using <a href="#!" class="skill" data-skill="React.js">React.js</a> for the web frontend, 
+                <a href="#!" class="skill" data-skill="Spring Boot">Spring Boot</a> for the backend, and <a href="#!" class="skill" data-skill="PostgreSQL">PostgreSQL</a> as the primary data layer. 
+                The iOS client, built with <a href="#!" class="skill" data-skill="SwiftUI">SwiftUI</a>, includes features for secure login via <a href="#!" class="skill" data-skill="Firebase Authentication">Firebase Authentication</a>, 
+                W-2 form upload with OCR, and user-friendly navigation for reviewing and submitting personal, academic, and immigration data. 
+                The backend is hosted on <a href="#!" class="skill" data-skill="Azure">Azure</a> — processes extracted W-2 data, performs validation, and generates ready-to-file IRS forms such as 1040NR and 8843. 
+                Built with modular APIs and future-ready architecture, TaxMate is designed for long-term extensibility, compliance, and real-world usability.
+            </p>
         </section>
         <section id="pras">
             <h2>Program Assistant</h2>
@@ -319,7 +386,21 @@
         <section id="buckbuddy">
             <h2>BuckBuddy</h2>
             <h3>Group Expense Sharing Mobile App | May 2025 - Present</h3>
-            <p>Blah Blah Blah</p>
+            <!-- Casual Paragraph -->
+            <p>
+            BuckBuddy was inspired by that all-too-familiar friend group chaos of “who owes what”, and a love for clean, touch-friendly design. 
+                It’s an expense-sharing app that makes tracking and splitting group costs actually feel smooth. With intuitive swipe navigation, you can hop between your groups, friends, and balances like flipping 
+                through cards, no tabs, no clutter. I designed it to be simple, quick, and visually pleasant, while still powerful under the hood.
+            </p>
+            <!-- Technical Paragraph -->
+            <p>
+            BuckBuddy is a SwiftUI-based mobile app designed for seamless group expense management, integrating features like friend tracking, group creation, expense logging, and real-time balance updates. 
+                Navigation is handled through gesture-driven UI transitions using directional swipes between views such as Home, Friends, Groups, Expenses, and Profile. 
+                The backend logic and API endpoints are powered by <a href="#!" class="skill" data-skill="Firebase Cloud Functions">Firebase Cloud Functions</a>, 
+                with <a href="#!" class="skill" data-skill="Firebase Authentication">Firebase Authentication</a> and <a href="#!" class="skill" data-skill="Firestore">Firestore</a> handling user login and data storage. 
+                The app employs structured data models and dynamic view rendering to ensure efficient state management and user experience. 
+                Designed to be scalable and lightweight, BuckBuddy blends functionality with simplicity, making expense tracking feel like second nature.
+            </p>
         </section>
     </body>
 </html>
