@@ -1,13 +1,14 @@
 /* ==== Google Font Imports ==== */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=IBM+Plex+Sans&family=JetBrains+Mono&family=Kalam&family=Merriweather+Sans&family=Nunito&family=Orbitron&family=Titillium+Web&display=swap');
 
-/* ==== Reset + Scroll Snap Setup ==== */
-html {
+/* ==== Reset + Scroll Setup ==== */
+html, body {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  scroll-snap-type: y mandatory;
   max-width: 900px;
   margin: 0 auto;
   padding: 0;
@@ -15,8 +16,21 @@ body {
   font-family: sans-serif;
 }
 
+/* ==== Scroll Container ==== */
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.snap-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 /* ==== Scrollable Fullscreen Sections ==== */
-section {
+.snap-container section {
   height: 100vh;
   scroll-snap-align: start;
   display: flex;
@@ -160,24 +174,4 @@ body.technical a.skill {
 body.technical a.skill:hover {
   color: var(--highlight);
   border-color: var(--highlight);
-}
-
-.snap-container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */v
-}
-
-.snap-container section {
-  height: 100vh;
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.snap-container::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
 }
