@@ -4,6 +4,8 @@
 /* ==== Reset + Scroll Snap Setup ==== */
 html {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -164,8 +166,9 @@ body.technical a.skill:hover {
 
 .snap-container {
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100vh;
+  width: 100vw;
 }
 
 .snap-container section {
@@ -174,4 +177,13 @@ body.technical a.skill:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.snap-container {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.snap-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
