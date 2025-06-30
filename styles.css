@@ -8,8 +8,6 @@ html {
 
 body {
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
   max-width: 900px;
   margin: 0 auto;
   padding: 0;
@@ -162,4 +160,18 @@ body.technical a.skill {
 body.technical a.skill:hover {
   color: var(--highlight);
   border-color: var(--highlight);
+}
+
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.snap-container section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
