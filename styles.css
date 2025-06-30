@@ -92,3 +92,20 @@ body.technical h3 {
 body.technical code {
   font-family: 'JetBrains Mono', monospace;
 }
+
+/* ==== Paragraph Visibility by Mode ==== */
+
+/* Default: hide both (optional safety) */
+.casual p.technical,
+.technical p.casual {
+  display: none;
+}
+
+/* Show only matching paragraphs per mode */
+body.casual p.casual {
+  display: block;
+}
+
+body.technical p.technical {
+  display: block;
+}
