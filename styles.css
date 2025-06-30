@@ -4,8 +4,6 @@
 /* ==== Reset + Scroll Snap Setup ==== */
 html {
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -168,7 +166,6 @@ body.technical a.skill:hover {
   scroll-snap-type: y mandatory;
   overflow-y: auto;
   height: 100vh;
-  width: 100vw;
 }
 
 .snap-container section {
