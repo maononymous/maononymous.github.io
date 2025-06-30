@@ -164,8 +164,10 @@ body.technical a.skill:hover {
 
 .snap-container {
   scroll-snap-type: y mandatory;
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 100vh;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */v
 }
 
 .snap-container section {
@@ -174,11 +176,6 @@ body.technical a.skill:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-.snap-container {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE 10+ */
 }
 
 .snap-container::-webkit-scrollbar {
