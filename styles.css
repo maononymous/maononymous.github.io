@@ -68,6 +68,14 @@ section {
 /* ==== CASUAL MODE — DNA THEME ==== */
 body.casual {
   font-family: 'Nunito', 'Kalam', sans-serif;
+  background: radial-gradient(circle at top center, #FFF2E0, #FAF9F6, #FDFDFD);
+  color: #2E2E2E;
+
+  /* Accent Variables */
+  --accent-1: #D1495B;
+  --accent-2: #588B8B;
+  --highlight: #F3A712;
+  --soft-border: #DCDCDC;
 }
 
 body.casual h2,
@@ -75,13 +83,29 @@ body.casual h3 {
   font-family: 'Merriweather Sans', sans-serif;
 }
 
+body.casual h3 {
+  color: #555;
+}
+
 body.casual code {
   font-family: 'Fira Mono', monospace;
+}
+
+body.casual section {
+  border-bottom: 1px solid var(--soft-border);
 }
 
 /* ==== TECHNICAL MODE — PLANETARY THEME ==== */
 body.technical {
   font-family: 'IBM Plex Sans', 'Titillium Web', sans-serif;
+  background: radial-gradient(circle at center, #1F1F2E, #0B0C10);
+  color: #EAEAEA;
+
+  /* Accent Variables */
+  --accent-1: #00ADB5;
+  --accent-2: #7F7FFF;
+  --highlight: #FFFFFF;
+  --lines: #222831;
 }
 
 body.technical h2,
@@ -89,8 +113,16 @@ body.technical h3 {
   font-family: 'Orbitron', sans-serif;
 }
 
+body.technical h3 {
+  color: #7F7FFF;
+}
+
 body.technical code {
   font-family: 'JetBrains Mono', monospace;
+}
+
+body.technical section {
+  border-bottom: 1px solid var(--lines);
 }
 
 /* ==== Paragraph Visibility by Mode ==== */
