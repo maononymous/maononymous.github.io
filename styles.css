@@ -160,3 +160,23 @@ body.technical a.skill:hover {
   color: var(--highlight);
   border-color: var(--highlight);
 }
+
+/* ==== Scroll-Snap Fullscreen Sections ==== */
+body {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+/* Each section fills one screen height and snaps cleanly */
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 8vh; /* Aligns h2 consistently */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
