@@ -1,19 +1,38 @@
 /* ==== Google Font Imports ==== */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=IBM+Plex+Sans&family=JetBrains+Mono&family=Kalam&family=Merriweather+Sans&family=Nunito&family=Orbitron&family=Titillium+Web&display=swap');
 
-/* ==== Reset + Base Layout ==== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* ==== Reset + Scroll Snap Setup ==== */
+html {
+  height: 100%;
 }
 
 body {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
   max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   line-height: 1.6;
-  font-family: sans-serif; /* fallback */
+  font-family: sans-serif;
+}
+
+/* ==== Scrollable Fullscreen Sections ==== */
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* ==== Consistent Content Start Point ==== */
+.section-content {
+  margin-top: 10vh;
 }
 
 /* ==== Heading Alignment ==== */
@@ -39,21 +58,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
-/* ==== Section Spacing ==== */
-section {
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid #ddd;
-}
-
-.section-content {
-  margin-top: 100vh;
-}
-
 /* ==== Mobile Responsiveness ==== */
 @media (max-width: 600px) {
   body {
-    padding: 1rem;
+    padding: 0;
   }
 
   h2 {
@@ -75,7 +83,6 @@ body.casual {
   background: radial-gradient(circle at top center, #FFF2E0, #FAF9F6, #FDFDFD);
   color: #2E2E2E;
 
-  /* Accent Variables */
   --accent-1: #D1495B;
   --accent-2: #588B8B;
   --highlight: #F3A712;
@@ -105,7 +112,6 @@ body.technical {
   background: radial-gradient(circle at center, #1F1F2E, #0B0C10);
   color: #EAEAEA;
 
-  /* Accent Variables */
   --accent-1: #00ADB5;
   --accent-2: #7F7FFF;
   --highlight: #FFFFFF;
@@ -130,14 +136,11 @@ body.technical section {
 }
 
 /* ==== Paragraph Visibility by Mode ==== */
-
-/* Default: hide both (optional safety) */
 .casual p.technical,
 .technical p.casual {
   display: none;
 }
 
-/* Show only matching paragraphs per mode */
 body.casual p.casual {
   display: block;
 }
@@ -159,24 +162,4 @@ body.technical a.skill {
 body.technical a.skill:hover {
   color: var(--highlight);
   border-color: var(--highlight);
-}
-
-/* ==== Scroll-Snap Fullscreen Sections ==== */
-body {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-}
-
-/* Each section fills one screen height and snaps cleanly */
-section {
-  height: 100vh;
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 8vh; /* Aligns h2 consistently */
-  padding-left: 2rem;
-  padding-right: 2rem;
-  box-sizing: border-box;
 }
