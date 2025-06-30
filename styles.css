@@ -1,3 +1,6 @@
+/* ==== Google Font Imports ==== */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&family=IBM+Plex+Sans&family=JetBrains+Mono&family=Kalam&family=Merriweather+Sans&family=Nunito&family=Orbitron&family=Titillium+Web&display=swap');
+
 /* ==== Reset + Base Layout ==== */
 * {
   box-sizing: border-box;
@@ -10,6 +13,7 @@ body {
   margin: 0 auto;
   padding: 2rem;
   line-height: 1.6;
+  font-family: sans-serif; /* fallback */
 }
 
 /* ==== Heading Alignment ==== */
@@ -20,7 +24,7 @@ h2 {
 }
 
 h3 {
-  text-align: right;
+  text-align: left;
   margin-right: 1rem;
   font-size: 1rem;
   color: #666;
@@ -59,4 +63,32 @@ section {
   p {
     font-size: 0.95rem;
   }
+}
+
+/* ==== CASUAL MODE — DNA THEME ==== */
+body.casual {
+  font-family: 'Nunito', 'Kalam', sans-serif;
+}
+
+body.casual h2,
+body.casual h3 {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+body.casual code {
+  font-family: 'Fira Mono', monospace;
+}
+
+/* ==== TECHNICAL MODE — PLANETARY THEME ==== */
+body.technical {
+  font-family: 'IBM Plex Sans', 'Titillium Web', sans-serif;
+}
+
+body.technical h2,
+body.technical h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+body.technical code {
+  font-family: 'JetBrains Mono', monospace;
 }
