@@ -46,6 +46,10 @@ section {
   border-bottom: 1px solid #ddd;
 }
 
+.section-content {
+  margin-top: 10vh;
+}
+
 /* ==== Mobile Responsiveness ==== */
 @media (max-width: 600px) {
   body {
@@ -140,4 +144,19 @@ body.casual p.casual {
 
 body.technical p.technical {
   display: block;
+}
+
+/* ==== Skill Tag Styling (TECHNICAL MODE ONLY) ==== */
+body.technical a.skill {
+  color: var(--accent-2);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent-2);
+  padding: 0 2px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+  cursor: default;
+}
+
+body.technical a.skill:hover {
+  color: var(--highlight);
+  border-color: var(--highlight);
 }
