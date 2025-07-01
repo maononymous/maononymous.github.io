@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!planet || !content) return;
 
-    gsap.fromTo(planet, 
+    /*gsap.fromTo(planet, 
       { opacity: 0, scale: 0.9 }, 
       {
         opacity: 1,
@@ -35,6 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
           scrub: true,
         }
       }
-    );
+    );*/
   });
 });
