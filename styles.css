@@ -192,3 +192,27 @@ section {
   position: relative; /* Required for planet to sit inside */
   overflow: hidden;
 }
+
+[data-planet="planet0"] {
+  background-image: url('assets/planets/planet0.jpg');
+}
+
+[data-planet="planet1"] {
+  background-image: url('assets/planets/planet1.jpg');
+}
+
+[data-planet="planet2"] {
+  background-image: url('assets/planets/planet2.jpg');
+}
+
+[data-planet="planet3"] {
+  background-image: url('assets/planets/planet3.jpg');
+}
+
+[data-planet="planet4"] {
+  background-image: url('assets/planets/planet4.jpg');
+}
+
+[data-planet="planet5"] {
+  background-image: url('assets/planets/planet5.jpg');
+}
