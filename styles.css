@@ -29,6 +29,16 @@ body {
   display: none; /* Chrome, Safari, Opera */
 }
 
+.snap-container section {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
 /* ==== Scrollable Fullscreen Sections ==== */
 .snap-container section {
   height: 100vh;
@@ -45,6 +55,8 @@ body {
 /* ==== Consistent Content Start Point ==== */
 .section-content {
   margin-top: 10vh;
+  position: relative;
+  z-index: 1;
 }
 
 /* ==== Heading Alignment ==== */
@@ -183,9 +195,10 @@ body.technical .planet-layer {
   background-repeat: no-repeat;
   background-position: center;
   opacity: 1;
-  z-index: -1;
+  z-index: 0;
   transform: scale(0.95);
   transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 section {
