@@ -175,3 +175,20 @@ body.technical a.skill:hover {
   color: var(--highlight);
   border-color: var(--highlight);
 }
+
+body.technical .planet-layer {
+  position: absolute;
+  inset: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  z-index: -1;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease;
+}
+
+section {
+  position: relative; /* Required for planet to sit inside */
+  overflow: hidden;
+}
